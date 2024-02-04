@@ -1,9 +1,9 @@
 package main
 
 import (
+	"VolumeFix/ico"
 	"fmt"
 	"github.com/getlantern/systray"
-	"github.com/getlantern/systray/example/icon"
 	"github.com/go-ole/go-ole"
 	"github.com/moutend/go-hook/pkg/keyboard"
 	"github.com/moutend/go-hook/pkg/types"
@@ -31,7 +31,7 @@ func main() {
 }
 
 func onReady() {
-	systray.SetIcon(icon.Data)
+	systray.SetIcon(ico.Icon)
 	systray.SetTitle("Volume Fix")
 	systray.SetTooltip("Volume Fix")
 	quit := systray.AddMenuItem("Quit", "Quit the whole app")
