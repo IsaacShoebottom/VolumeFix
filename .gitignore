@@ -1,2 +1,7 @@
 # Build folder
 bin
+
+# Build artifacts
+ico/VolumeFix.go
+ico/VolumeFix.ico
+ico/VolumeFix.syso
