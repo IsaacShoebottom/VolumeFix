@@ -10,7 +10,7 @@ icon:
 	2goarray Icon ico < ico/VolumeFix.ico > ico/VolumeFix.go
 
 syso:
-	rsrc -ico ico/VolumeFix.ico -o bin/VolumeFix.syso
+	rsrc -ico ico/VolumeFix.ico -o ico/VolumeFix.syso
 
 build: icon syso
 	go build -ldflags "-H windowsgui" -o bin/
@@ -21,6 +21,6 @@ build-debug: icon syso
 clean:
 	rm -f "ico/VolumeFix.ico"
 	rm -f "ico/VolumeFix.go"
-	rm -f "bin/VolumeFix.syso"
+	rm -f "ico/VolumeFix.syso"
 	rm -f "bin/VolumeFix.exe"
 	rm -f "bin/VolumeFix"
